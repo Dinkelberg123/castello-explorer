@@ -3,7 +3,7 @@ import castello2 from "@/assets/castello-2.jpg";
 import castello3 from "@/assets/castello-3.jpg";
 import castello4 from "@/assets/castello-4.jpg";
 
-export type Species = "ibex" | "red-deer";
+export type Species = "ibex" | "red-deer" | "wild-boar";
 
 export interface Castello {
   id: string;
@@ -37,7 +37,7 @@ export const castellos: Castello[] = [
       "Helicopter access to remote zones",
     ],
     previewImage: castello1,
-    mapPosition: { x: 52, y: 82 },
+    mapPosition: { x: 52, y: 78 },
   },
   {
     id: "gredos-ibex",
@@ -56,7 +56,7 @@ export const castellos: Castello[] = [
       "Stalking and driven hunt options",
     ],
     previewImage: castello3,
-    mapPosition: { x: 35, y: 52 },
+    mapPosition: { x: 35, y: 48 },
   },
   {
     id: "montes-toledo-deer",
@@ -75,7 +75,7 @@ export const castellos: Castello[] = [
       "Wine cellar and gourmet dining",
     ],
     previewImage: castello2,
-    mapPosition: { x: 38, y: 60 },
+    mapPosition: { x: 38, y: 56 },
   },
   {
     id: "coto-donana-deer",
@@ -94,19 +94,56 @@ export const castellos: Castello[] = [
       "Full concierge hunting service",
     ],
     previewImage: castello4,
-    mapPosition: { x: 25, y: 62 },
+    mapPosition: { x: 22, y: 58 },
+  },
+  {
+    id: "asturias-boar",
+    name: "Castello de Asturias",
+    animal: "wild-boar",
+    region: "Asturias",
+    shortDescription: "Wild boar driven hunts in the rugged Asturian mountains.",
+    longDescription:
+      "Deep in the Cantabrian range, Castello de Asturias offers traditional montería-style wild boar hunts across 10,000 hectares of ancient beech and chestnut forest. The terrain is dramatic — steep valleys, dense undergrowth, and misty ridgelines create an unforgettable hunting experience. The estate lodge dates to the 18th century.",
+    huntingWindow: "October – February",
+    priceBand: "€5,000 – €9,000",
+    highlights: [
+      "Traditional montería wild boar drives",
+      "Cantabrian mountain terrain",
+      "18th-century estate lodge",
+      "Expert local beaters and dogs",
+    ],
+    previewImage: castello1,
+    mapPosition: { x: 30, y: 15 },
+  },
+  {
+    id: "extremadura-boar",
+    name: "Castello Dehesa Real",
+    animal: "wild-boar",
+    region: "Extremadura",
+    shortDescription: "Premium wild boar stalking in Extremadura's oak dehesas.",
+    longDescription:
+      "Castello Dehesa Real encompasses 18,000 hectares of pristine dehesa landscape in the heart of Extremadura. The estate's abundant acorn crop supports one of Spain's densest wild boar populations, with mature specimens regularly exceeding 100kg. Hunts combine traditional stalking with strategic driven methods.",
+    huntingWindow: "September – March",
+    priceBand: "€4,500 – €8,500",
+    highlights: [
+      "High-density wild boar population",
+      "Mixed stalking and driven hunts",
+      "Gourmet Ibérico dining experiences",
+      "Private airstrip access",
+    ],
+    previewImage: castello2,
+    mapPosition: { x: 18, y: 52 },
   },
 ];
 
 export const accentPoints = [
-  { x: 70, y: 35 },
-  { x: 15, y: 40 },
-  { x: 60, y: 55 },
-  { x: 80, y: 65 },
-  { x: 45, y: 38 },
-  { x: 30, y: 75 },
-  { x: 55, y: 45 },
-  { x: 68, y: 72 },
-  { x: 22, y: 50 },
-  { x: 75, y: 48 },
+  { x: 70, y: 30 },
+  { x: 15, y: 35 },
+  { x: 60, y: 50 },
+  { x: 80, y: 60 },
+  { x: 45, y: 33 },
+  { x: 28, y: 70 },
+  { x: 55, y: 40 },
+  { x: 68, y: 68 },
+  { x: 75, y: 44 },
 ];
